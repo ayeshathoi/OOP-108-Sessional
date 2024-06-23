@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="489.0" prefWidth="754.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ManufacturerController">
+   <children>
+      <VBox layoutX="7.0" prefHeight="489.0" prefWidth="163.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label prefHeight="51.0" prefWidth="149.0" text="      Welcome," textFill="#af1010">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+            <Label fx:id="ManufacturerName" prefHeight="46.0" prefWidth="149.0" text=" Manufacturer !" textFill="#940c0c">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font></Label>
+            <Label prefHeight="197.0" prefWidth="163.0" />
+            <Button mnemonicParsing="false" onAction="#UpdateButtonClicked" prefHeight="46.0" prefWidth="154.0" style="-fx-background-color: #920606; -fx-background-radius: 90;" text="Update Database" textFill="#f2eaea">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label prefHeight="44.0" prefWidth="149.0" />
+            <Button mnemonicParsing="false" onAction="#AddButtonClicked" prefHeight="29.0" prefWidth="151.0" style="-fx-background-color: #920606; -fx-background-radius: 90;" text="Add A Car" textFill="#f8f6f6">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <TableView fx:id="table" layoutX="197.0" prefHeight="357.0" prefWidth="557.0" style="-fx-background-color: white;">
+        <columns>
+          <TableColumn fx:id="carReg" prefWidth="56.0" style="-fx-background-color: white;" text="Car Reg" />
+          <TableColumn fx:id="YearMade" prefWidth="63.0" style="-fx-background-color: #ffffff;" text="YearMade" />
+            <TableColumn fx:id="color1" prefWidth="50.0" style="-fx-background-color: #ffffff;" text="color 1" />
+            <TableColumn fx:id="color2" prefWidth="51.0" style="-fx-background-color: #ffffff;" text="color 2" />
+            <TableColumn fx:id="color3" prefWidth="61.0" style="-fx-background-color: #ffffff;" text="color 3" />
+            <TableColumn fx:id="carMake" prefWidth="64.0" style="-fx-background-color: #ffffff;" text="CarMake" />
+            <TableColumn fx:id="carModel" prefWidth="71.0" style="-fx-background-color: #ffffff;" text="Car Model" />
+            <TableColumn fx:id="price" prefWidth="60.0" style="-fx-background-color: #ffffff;" text="Price" />
+            <TableColumn fx:id="quantity" style="-fx-background-color: #ffffff;" text="Quantity" />
+        </columns>
+      </TableView>
+      <Button layoutX="605.0" layoutY="421.0" mnemonicParsing="false" onAction="#LogoutButtonClicked" prefHeight="3.0" prefWidth="116.0" style="-fx-background-color: #920606; -fx-background-radius: 90;" text="Logout" textFill="#fff9f9">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <VBox layoutX="169.0" prefHeight="489.0" prefWidth="28.0" style="-fx-background-color: #920606;" />
+      <VBox layoutX="-7.0" layoutY="-3.0" prefHeight="495.0" prefWidth="14.0" style="-fx-background-color: #ffffff;" />
+      <Label />
+   </children>
+</AnchorPane>

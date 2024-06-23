@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="470.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SearchBuyController">
+   <children>
+      <HBox prefHeight="37.0" prefWidth="600.0" style="-fx-background-color: white;" />
+      <VBox prefHeight="470.0" prefWidth="48.0" style="-fx-background-color: white;" />
+      <Label layoutX="59.0" layoutY="37.0" prefHeight="37.0" prefWidth="500.0" text="                              Search Car" textFill="#920606">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <VBox layoutX="73.0" layoutY="75.0" prefHeight="160.0" prefWidth="216.0">
+         <children>
+            <Label prefHeight="31.0" prefWidth="135.0" text="By Registration :" textFill="#b21717">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label prefHeight="29.0" prefWidth="120.0" text="Enter CarReg :" textFill="#6c0404">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="SearchCarID" prefHeight="34.0" prefWidth="216.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="345.0" layoutY="68.0" prefHeight="151.0" prefWidth="216.0">
+         <children>
+            <Label prefHeight="34.0" prefWidth="184.0" text="By CarMake &amp; CarModel :" textFill="#cf0d0d">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label prefHeight="14.0" prefWidth="194.0" text="Enter CarMake :" textFill="#b51818">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="searchCarMake" prefHeight="37.0" prefWidth="216.0" />
+            <Label prefHeight="22.0" prefWidth="210.0" text="Enter CarModel :" textFill="#770c0c">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="SearchCarModel" prefHeight="34.0" prefWidth="216.0" />
+         </children>
+      </VBox>
+      <Button layoutX="273.0" layoutY="219.0" mnemonicParsing="false" onAction="#SearchButtonClicked" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #920606; -fx-background-radius: 90;" text="Search" textFill="#f8f3f3">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="-30.0" layoutY="266.0" prefHeight="43.0" prefWidth="320.0" text="                       Buy Car" textFill="#940c0c">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="332.0" prefHeight="25.0" prefWidth="103.0" text="Enter CarReg :" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BuyCarReg" layoutX="73.0" layoutY="327.0" prefHeight="34.0" prefWidth="149.0" />
+      <Button layoutX="130.0" layoutY="373.0" mnemonicParsing="false" onAction="#BuyButtonClicked" prefHeight="37.0" prefWidth="56.0" style="-fx-background-color: #920606; -fx-background-radius: 90;" text="Buy" textFill="#f5ebeb">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="433.0" layoutY="411.0" mnemonicParsing="false" onAction="#BackToMainPageClicked" prefHeight="30.0" prefWidth="149.0" style="-fx-background-color: #920606; -fx-background-radius: 90;" text="Back to MainPage" textFill="#eddede">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
